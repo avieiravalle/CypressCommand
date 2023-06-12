@@ -33,5 +33,11 @@ Cypress.Commands.add('Login', (usuario, password) => {
 
     cy.get('h2').should('be.visible')
     cy.get('h2').contains('Login Form')
-   
+
+
+// função copia texto
+    //cy.get('h2').then(($el) => {
+    //  const Texto = $el.text()
+    //cy.get('[name="uname"]').type(Texto)
+    // })
 })
