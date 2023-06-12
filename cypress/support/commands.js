@@ -29,6 +29,9 @@ Cypress.Commands.add('Login', (usuario, password) => {
 
     cy.get('[name="uname"]').type(usuario)
     cy.get('[name="psw"]').type(password)
-    cy.get('[type="submit"]').click()
+    //cy.get('[type="submit"]').click()
+
+    cy.get('h2').should('be.visible')
+    cy.get('h2').contains('Login Form')
    
 })
