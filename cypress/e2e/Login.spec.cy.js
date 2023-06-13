@@ -3,8 +3,8 @@
 import { faker } from "@faker-js/faker"
 
 
-describe('template spec', () => {
-  it('passes', () => {
+describe('Login', () => {
+  it('Login Faker', () => {
     cy.Login(faker.name.firstName(), faker.internet.password())
   })
 })
