@@ -1,5 +1,10 @@
+/// <reference types="cypress" />
+
+import { faker } from "@faker-js/faker"
+
+
 describe('template spec', () => {
   it('passes', () => {
-    cy.Login('Anderson', 'Senha')
+    cy.Login(faker.name.firstName(), faker.internet.password())
   })
 })
